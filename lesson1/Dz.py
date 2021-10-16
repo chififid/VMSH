@@ -1,4 +1,4 @@
-from math import sqrt
+from math import sqrt, fabs
 
 
 # 1
@@ -9,10 +9,14 @@ def print_max_number(numbers):
 
 
 # 2
-def is_triangle(points):
-    planes = [[point[0] for point in points], [point[1] for point in points]]
+def no_null(number):
+    if number == 0:
+        return 1
+    return  number
 
-    if len(set(planes[0])) > 1 and len(set(planes[1])) > 1:
+def is_triangle(points):
+    if (fabs(points[0][0] - points[1][0])) / no_null(fabs(points[0][1] - points[1][1])) != \
+            (fabs(points[0][0] - points[2][0])) / no_null(fabs(points[0][1] - points[2][1])):
         return True
 
     return False

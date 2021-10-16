@@ -15,9 +15,7 @@ class MyTestCase(unittest.TestCase):
 
     def test_is_triangle(self):
         test_props = [
-            {"points": [[1, 3], [1, 3], [1, 3]], "result": False},
-            {"points": [[1, 22], [1, 12], [1, 33]], "result": False},
-            {"points": [[11, 11], [11, 22], [11, 22]], "result": False},
+            {"points": [[1, 1], [2, 2], [3, 3]], "result": False},
             {"points": [[0, 0], [0, 10], [10, 10]], "result": True}
         ]
 
