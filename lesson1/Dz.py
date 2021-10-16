@@ -14,6 +14,7 @@ def no_null(number):
         return 1
     return number
 
+
 def is_triangle(points):
     if (fabs(points[0][0] - points[1][0])) / no_null(fabs(points[0][1] - points[1][1])) != \
             (fabs(points[0][0] - points[2][0])) / no_null(fabs(points[0][1] - points[2][1])):
