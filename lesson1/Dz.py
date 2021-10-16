@@ -12,7 +12,7 @@ def print_max_number(numbers):
 def no_null(number):
     if number == 0:
         return 1
-    return  number
+    return number
 
 def is_triangle(points):
     if (fabs(points[0][0] - points[1][0])) / no_null(fabs(points[0][1] - points[1][1])) != \
