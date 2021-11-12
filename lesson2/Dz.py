@@ -25,7 +25,6 @@ def middle_num_rec(count=0):
 
     return result / count
 
-
 # 3
 def alternation_lists_re(*lists):
     if [] in lists:
